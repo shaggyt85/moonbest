@@ -1,7 +1,7 @@
 "use client";
 import { NavBar } from "./Components";
 import "./globals.css";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { SidebarProvider } from "./Context/SidebarContext";
 import { StateProvider } from "./Context/StateProvider";
 import { initialState } from "./Context/initialState";
@@ -15,12 +15,12 @@ import {
 import { MoonbaseAlpha } from "@thirdweb-dev/chains";  
 import { StateContextProvider } from "./Context/Thirdweb";
 import { ThemeProvider } from "./Context/GetCampaigns";
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {    
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <StateProvider initialState={initialState} reducer={reducer}>
           <ThirdwebProvider
             activeChain={MoonbaseAlpha }
