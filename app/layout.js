@@ -8,11 +8,11 @@ import { initialState } from "./Context/initialState";
 import  reducer  from "./Context/reducer";
 import {
   ThirdwebProvider,
-  ChainId,
   metamaskWallet,
   coinbaseWallet,
   walletConnectV1,
 } from "@thirdweb-dev/react";
+import { MoonbaseAlpha } from "@thirdweb-dev/chains";  
 import { StateContextProvider } from "./Context/Thirdweb";
 import { ThemeProvider } from "./Context/GetCampaigns";
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <StateProvider initialState={initialState} reducer={reducer}>
           <ThirdwebProvider
-            activeChain={ChainId.Goerli}
+            activeChain={MoonbaseAlpha }
             supportedWallets={[
               metamaskWallet(),
               coinbaseWallet(),
