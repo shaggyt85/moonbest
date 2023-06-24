@@ -44,7 +44,7 @@ const Sidebar = () => {
           <Link  rel="preload" href="/pages/perfil" as="/pages/perfil">
           <Image src="/assets/Logo.jpg" alt="logo" width={80} height={80} className="w-[55px] h-[55px] object-cover border-y-transparent   rounded-full " />
           </Link>
-          <p className={`text-[1.1rem] font-semibold ${isCollapsedSidebar ? "hidden" : "block"}`}>Crowdfunding Web3</p>
+          <p className={`text-[1.1rem] font-semibold ${isCollapsedSidebar ? "hidden" : "block"}`}>SolidFund</p>
         </div>
         <ul className="list-none">
           {linksSidebar.map((link) => (

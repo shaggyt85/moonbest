@@ -42,7 +42,7 @@ const NavBar = () => {
             height={50}
           />
         </Link>
-        <p className="hidden md:flex font-epilogue font-normal text-[1rem] gap-2 p-2">CrowdFunding</p>
+        <p className="hidden md:flex font-epilogue font-normal text-[1rem] gap-2 p-2">SolidFund</p>
       </div>
       {/* search bar   */}
       <div className="lg:flex-1 flex flex-row max-w-[458px] py-2 pl-4 pr-2 h-[3rem] bg-[#e5e5ee] items-center rounded-full">
