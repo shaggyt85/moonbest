@@ -1,18 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { data } from "./dummy";
 
-const Slider = () => {
-  const [domLoaded, setDomLoaded] = React.useState(false);
 
-  useEffect(() => {
-    setDomLoaded(true);
-  }, []);
+const Slider = () => {
   return (
     <>
-      {domLoaded && (
         <Carousel
           showArrows={true}
           infiniteLoop={true}
@@ -43,7 +37,6 @@ const Slider = () => {
             </div>
           ))}
         </Carousel>
-      )}
     </>
   );
 };

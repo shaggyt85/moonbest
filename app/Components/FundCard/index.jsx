@@ -3,7 +3,7 @@ import React from 'react'
 import { FaEthereum } from 'react-icons/fa'
 import { useThemeContext } from '../../Context/GetCampaigns';
 import  folder  from '@/public/assets/folder.svg'
-import Logo from '@/public/assets/Logo.jpg'
+import Logo from '../../../public/assets/Logo.jpg'
 import Image from "next/image";
 
 const FundCard = ({owner, target, votes, id, params}) => {

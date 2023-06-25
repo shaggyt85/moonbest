@@ -3,6 +3,7 @@ import React, { useContext, createContext, useEffect } from "react";
 import {
   useContract,
   useContractWrite,
+  useContractRead,
   useAddress,
   useMetamask,
 } from "@thirdweb-dev/react";
@@ -24,7 +25,7 @@ export const StateContextProvider = ({ children }) => {
     "create"
   );
   const { mutateAsync: voteCampaign } = useContractWrite(contract, "voteCampaign")
-
+  const { data, isLoading } = useContractRead(contract, "getCampaigns");
   const address = useAddress();
   const connect = useMetamask();
   
@@ -79,7 +80,7 @@ export const StateContextProvider = ({ children }) => {
     return () => clearInterval(intervalId)
   }, [contract])  
 
-  const getVote = async (idUrl) => {
+   const getVote = async (idUrl) => {
     try {
       const data = await voteCampaign({args: [
         idUrl.idUrl,

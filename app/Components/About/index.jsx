@@ -1,4 +1,3 @@
-import React from "react";
 import About1 from "@/public/images/About1.jpg";
 import about2 from "@/public/images/about2.jpg";
 import Image from "next/image";
