@@ -27,12 +27,12 @@ const Slider = () => {
               />
               <div className="absolute bottom-0 left-0 w-full h-[500px] "></div>
               <div className="absolute bottom-0 left-0 w-full h-[500px] flex flex-col justify-center items-center">
-                <h1 className="text-white text-4xl font-bold mb-4">
+                {/* <h1 className="text-white text-4xl font-bold mb-4">
                   {item.title}
                 </h1>
                 <p className="text-white text-2xl font-bold mb-4">
                   Esto es una Prueba
-                </p>
+                </p> */}
               </div>
             </div>
           ))}

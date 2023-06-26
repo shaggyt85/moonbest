@@ -23,8 +23,8 @@ const HomeCard = ({owner, target, votes, id}) => {
       </div>
       </div>
       <div className="block p-2">
-        <h3 className="font-epilogue font-semibold text-[1rem] text-left leading-[1.625rem] truncate">Titulo: <span className='font-normal'>{item.title}</span> </h3>
-        <h3 className="font-epilogue font-semibold text-[1rem]  text-left leading-[1.625rem] truncate">Nombre: <span className='font-normal'> {item.name}</span> </h3>
+        <h3 className="font-epilogue font-semibold text-[1rem] text-left leading-[1.625rem] truncate">Title: <span className='font-normal'>{item.title}</span> </h3>
+        <h3 className="font-epilogue font-semibold text-[1rem]  text-left leading-[1.625rem] truncate">Name: <span className='font-normal'> {item.name}</span> </h3>
         <p className="mt-[5px] font-epilogue font-semibold  text-left leading-[1.625rem] truncate">Story: <span className='font-normal'>{item.description}</span></p>
       </div>
       <div className="flex justify-between flex-wrap gap-2 p-2">

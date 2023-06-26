@@ -8,12 +8,12 @@ export const links = [
         route: "/pages/campaigns",
       },
       {
-        label: "About",
-        route: "/pages/about",
+        label: "New Campaigns",
+        route: "/pages/perfil",
       },
       {
-        label: "Profile",
-        route: "/pages/perfil",
+        label: "About",
+        route: "/pages/about",
       },
 ]
 
