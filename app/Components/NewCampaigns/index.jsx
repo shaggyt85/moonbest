@@ -150,7 +150,7 @@ const NewCampaigns = () => {
         <div className="flex flex-wrap gap-[40px]">
           <FormFieldCamapigns 
             LabelName="Goal *"
-            placeholder="ETH 0.50"
+            placeholder="GLMR 100"
             inputType="text"
             value={isWebForm.goals}
             handleChange={(e) => handleFormFieldChange('goals', e)}
