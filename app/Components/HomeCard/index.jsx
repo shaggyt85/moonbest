@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { useThemeContext } from '../../Context/GetCampaigns'
-import { FaEthereum } from 'react-icons/fa'
+import glimmer from '@public/assets/glimmer.png'
+import Image from 'next/image'
 import { CustomImageFolder, CustomLogo } from '..'
 
 
@@ -32,7 +33,12 @@ const HomeCard = ({owner, target, votes, id}) => {
           <h4 className="font-epilogue font-semibold text-[1rem] leading-[1.625rem]">Amount Collected</h4>
           <div className='flex flex-row items-center'>
           <p className="mt-[0.12rem] font-epilogue font-semibold text-[1rem] leading-[1.625rem] sm:max-w-[9rem] truncate">Goals of: <span className='font-normal truncate'>{target}</span></p>
-          <FaEthereum/>
+          <Image className='ml-[0.5rem]'
+          src={glimmer}
+          alt='glimmer'
+          width={20}
+          height={20}
+          />
           </div>
         </div>
       </div>
